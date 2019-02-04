@@ -3,6 +3,12 @@ Pull data from AirTable and then format it into a PHP array for compatibility wi
 
 This project uses the AirTable Python Wrapper - https://github.com/gtalarico/airtable-python-wrapper
 
+# Notes
+
+- For any record, if `Asset Type` has more than one item in it, this program will ONLY choose the first item. If you want to change the category that a topic appears in, change the first item in `Asset Type` in AirTable.
+
+# How-to's
+
 To add a table:
 1. Add the table name to the list in `line 7`.
 1. Create a list in the `# Create defaultdict structures` section by copying and pasting an existing list under the other variables and changing the variable name.
