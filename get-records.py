@@ -16,7 +16,7 @@ content_since_records_list = defaultdict(list)
 for table in table_names:
 
     # AirTable API setup - replace the values with your own
-    airtable = Airtable('base-key', 'table-name', api_key='your-api-key')
+    airtable = Airtable('base-key', table, api_key='your-api-key')
 
     # Get only records that are in the correct Status
     records = airtable.get_all(view='Keep')
