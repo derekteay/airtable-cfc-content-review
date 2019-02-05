@@ -104,12 +104,12 @@ def createPHPpage(list, filename):
     for item in list:
         print("\t\"" + item + "\"", "=> array(")
 
-        event_counter = 1
+        details_counter = 1
 
         # Get the item detail
         for details in list[item]:
             # DEBUG
-            # print(str(event_counter), item2)
+            # print(str(details_counter), item2)
             # print(json.dumps(item2, indent=2))
 
             print("\t\tarray(")
@@ -118,12 +118,12 @@ def createPHPpage(list, filename):
             print("\t\t\t\"url\" => " + "\"" + details['url'] + "\",")
 
             # Check the list length against the counter so we know if we need a ',' or not
-            if event_counter == len(list[item]):
+            if details_counter == len(list[item]):
                 print("\t\t)")
             else:
                 print("\t\t),")
 
-            event_counter += 1
+            details_counter += 1
 
         # Check the list length against the counter so we know if we need a ',' or not
         if item_counter == len(list):
