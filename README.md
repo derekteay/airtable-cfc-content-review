@@ -1,6 +1,8 @@
 # airtable-cfc-content-review
 Pull data from AirTable and then format it into a PHP array for compatibility with our IBM website.
 
+Instead of filtering and searching for records with multiple statuses in Python, use AirTable "Views" to filter everything, call that view programmatically, and read the records.
+
 This project uses the AirTable Python Wrapper - https://github.com/gtalarico/airtable-python-wrapper
 
 # Notes
@@ -31,3 +33,7 @@ To delete a table and associated code:
 1. Remove the corresponding variable under the `# Create defaultdict structures` section.
 1. Remove the corresponding code in the `# Place data from the table in the correct list` section.
 1. Remove the corresponding code at the end of the file that calls the `createPHPpage` method.
+
+To change the View used by the program
+1. Create the View you want in AirTable
+2. Change `Keep` to your view name in this code `records = airtable.get_all(view='Keep')`
