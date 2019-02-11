@@ -148,5 +148,5 @@ def createPHPpage(list, filename):
 
 createPHPpage(technical_domain_records_list, '_technical-content')
 createPHPpage(disaster_domain_records_list, '_disaster-content')
-createPHPpage(healthcare_domain_records_list, 'healthcare-content')
+createPHPpage(healthcare_domain_records_list, '_healthcare-content')
 createPHPpage(content_since_records_list, '_content-since-content')
