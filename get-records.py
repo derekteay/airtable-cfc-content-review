@@ -114,7 +114,7 @@ def createPHPpage(list, filename):
 
             print("\t\tarray(")
             print("\t\t\t\"title\" => " + "\"" + details['topic'] + "\",")
-            print("\t\t\t\"date\" => " + "\"" + details['desc'] + "\",")
+            print("\t\t\t\"desc\" => " + "\"" + details['desc'] + "\",")
             print("\t\t\t\"url\" => " + "\"" + details['url'] + "\"")
 
             # Check the list length against the counter so we know if we need a ',' or not
